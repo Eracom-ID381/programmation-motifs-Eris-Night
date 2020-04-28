@@ -6,6 +6,7 @@ function setup() {
 }
 
 function draw() {
+    frameRate(25);
     for (var x = 0; x < height; x = x + 10) {
         for (var y = 0; y < width; y = y + 10) {
             let r = random(10);

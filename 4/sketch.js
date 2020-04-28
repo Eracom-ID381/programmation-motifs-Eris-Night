@@ -6,11 +6,20 @@ function setup() {
 }
 
 function draw() {
-    fill(0);
-    for (var x = 0; x < height; x = x + 10) {
-        for (var y = 0; y < width; y = y + 10) {
-
-        }
+    noFill();
+    ellipseMode(CORNER);
+    frameRate(0);
+    for (var y = 0; y < width; y = y + 50) {
+        circle(width / 2, height / 2, y);
+    }
+    for (var y = 0; y < width; y = y + 50) {
+        circle(width / 2 - y, height / 2, y);
+    }
+    for (var y = 0; y < width; y = y + 50) {
+        circle(width / 2, height / 2 - y, y);
+    }
+    for (var y = 0; y < width; y = y + 50) {
+        circle(width / 2 - y, height / 2 - y, y);
     }
 }
 
