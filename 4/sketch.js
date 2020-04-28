@@ -9,16 +9,16 @@ function draw() {
     noFill();
     ellipseMode(CORNER);
     frameRate(0);
-    for (var y = 0; y < width; y = y + 50) {
+    for (var y = 0; y < width; y = y + 30) {
         circle(width / 2, height / 2, y);
     }
-    for (var y = 0; y < width; y = y + 50) {
+    for (var y = 0; y < width; y = y + 30) {
         circle(width / 2 - y, height / 2, y);
     }
-    for (var y = 0; y < width; y = y + 50) {
+    for (var y = 0; y < width; y = y + 30) {
         circle(width / 2, height / 2 - y, y);
     }
-    for (var y = 0; y < width; y = y + 50) {
+    for (var y = 0; y < width; y = y + 30) {
         circle(width / 2 - y, height / 2 - y, y);
     }
 }

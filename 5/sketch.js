@@ -6,14 +6,12 @@ function setup() {
 }
 
 function draw() {
-    let x = 10;
-    fill(0);
-    noFill();
-    ellipseMode(CORNER);
-    frameRate(0);
-    for (var y = 0; y < width; y = y + 10) {
-        rotate(PI / 3.0);
-        circle(width / 2, height / 2, y);
+    for (let x = 0; x < height; x = x + 50) {
+        for (let y = 0; y < width; y = y + 110) {
+            strokeWeight(random(1, 50));
+            stroke(color(random(0, 255), random(0, 255), random(0, 255)))
+            point(y, x);
+        }
     }
 }
 
