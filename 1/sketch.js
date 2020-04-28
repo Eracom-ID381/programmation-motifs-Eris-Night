@@ -7,10 +7,23 @@ function setup() {
 
 function draw() {
     fill(0);
-    stroke(0);
-    for (var x = 0; x < width; x = x + 10) {
-        for (var y = 0; y < height; y = y + 10) {
+    for (var x = 0; x < width; x = x + 55) {
+        for (var y = 0; y < height; y = y + 55) {
+            strokeWeight(1);
+            stroke(255, 0, 102);
             line(width / 2, height / 2, x, y);
+        }
+    }
+    for (var x = 0; x < width; x = x + 55) {
+        for (var y = 0; y < height; y = y + 55) {
+            stroke(0);
+            strokeWeight(3);
+            line(0, 10000000, x, y);
+        }
+    }
+    for (var x = 0; x < width; x = x + 55) {
+        for (var y = 0; y < height; y = y + 55) {
+            line(10000000, 0, x, y);
         }
     }
 }

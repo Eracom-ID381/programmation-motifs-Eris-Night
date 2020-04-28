@@ -6,10 +6,11 @@ function setup() {
 }
 
 function draw() {
-    stroke(0;)
     for (var x = 0; x < height; x = x + 10) {
         for (var y = 0; y < width; y = y + 10) {
-            square(windowHeight / 2, windowWidth / 2, x);
+            let r = random(10);
+            stroke(color(random(0, 255), random(0, 255), random(0, 255)));
+            line(-100, x, 1700 + r, y);
         }
     }
 }
