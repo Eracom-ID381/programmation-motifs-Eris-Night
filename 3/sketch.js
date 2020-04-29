@@ -11,7 +11,7 @@ function draw() {
         for (var y = 0; y < width; y = y + 10) {
             let r = random(10);
             stroke(color(random(0, 255), random(0, 255), random(0, 255)));
-            line(-100, x, 1700 + r, y);
+            line(-100, x, 2000 + r, y);
         }
     }
 }
