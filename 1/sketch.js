@@ -6,16 +6,15 @@ function setup() {
 }
 
 function draw() {
-    fill(0);
     for (var x = 0; x < width; x = x + 55) {
         for (var y = 0; y < height; y = y + 55) {
-            strokeWeight(1);
-            stroke(255, 0, 102);
-            line(width / 2, height / 2, x, y);
+            fill(color(random(0, 255), random(0, 255), random(0, 255)));
+            square(x, y, 55);
         }
     }
     for (var x = 0; x < width; x = x + 55) {
         for (var y = 0; y < height; y = y + 55) {
+            noFill();
             stroke(0);
             strokeWeight(3);
             line(0, 10000000, x, y);
